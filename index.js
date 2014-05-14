@@ -21,10 +21,7 @@
     this.expiration = arr[2].slice(0, 4)
       .split(/(\d{2})/)
       .reverse()
-      .reduce(function(a, b) {
-        a+= b;
-        return a;
-      }, '');
+      .join('');
   }
 
   /*
